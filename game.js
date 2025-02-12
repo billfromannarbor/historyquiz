@@ -9,30 +9,39 @@ fetch('segments.json')
     .then(response => response.json())
     .then(data => {
         segments = data;
-        // Optionally, start the game or initialize UI here
+        // Shuffle questions for each segment
+        segments.forEach(segment => {
+            segment.questions = shuffleArray(segment.questions);
+        });
     })
     .catch(error => console.error('Error loading segments:', error));
 
 function startGame() {
-    window.location.href = 'game.html';
+    showNewQuestionSegment();
+}
+
+function showNewQuestionSegment() {
+    const segment = segments[currentSegment];
+    document.getElementById('game-container').style.display = 'block';
+    document.getElementById('segment-title').innerText = segment.title;
+    document.getElementById('segment-image').src = segment.image;
+    document.getElementById('scene-introduction').innerText = segment.introduction;
+    document.getElementById('question-container').style.display = 'none';
+    document.getElementById('game-container').style.display = 'block';
 }
 
 function showQuestion() {
     const segment = segments[currentSegment];
-    document.getElementById('segment-title').innerText = segment.title;
-    document.getElementById('segment-image').src = segment.image;
-    document.getElementById('scene-introduction').innerText = segment.introduction;
-    document.getElementById('question-container').style.display = 'block';
-
-    // Randomize question order
-    const question = segment.questions[Math.floor(Math.random() * segment.questions.length)];
+    const question = segment.questions[0]; // Get the first question after shuffling
     document.getElementById('question-text').innerText = question.text;
     const answersDiv = document.getElementById('answers');
     answersDiv.innerHTML = '';
 
-    // Randomize answer order
-    const shuffledAnswers = question.answers.map((a, i) => ({ text: a, index: i }))
-        .sort(() => Math.random() - 0.5);
+    // Shuffle answers
+    const shuffledAnswers = shuffleArray(question.answers.map((answer, index) => ({
+        text: answer,
+        index: index
+    })));
 
     shuffledAnswers.forEach(answer => {
         const button = document.createElement('button');
@@ -41,6 +50,7 @@ function showQuestion() {
         answersDiv.appendChild(button);
     });
 
+    document.getElementById('question-container').style.display = 'block';
     startTimer();
 }
 
@@ -69,16 +79,36 @@ function selectAnswer(selected, correct) {
 }
 
 function submitAnswer() {
-    // Logic to submit answer and move to next question
     document.getElementById('next-button').style.display = 'block';
 }
 
 function nextQuestion() {
     currentSegment++;
     if (currentSegment < segments.length) {
-        showQuestion();
+        showNewQuestionSegment();
     } else {
-        // End of game logic
-        alert('Game Over! Your final score is: ' + score);
+        showGameOver();
     }
+}
+
+function showGameOver() {
+    document.getElementById('game-container').style.display = 'none';
+    document.getElementById('game-over-container').style.display = 'block';
+    document.getElementById('final-score').innerText = `Your final score is: ${score}`;
+}
+
+function restartGame() {
+    score = 0;
+    currentSegment = 0;
+    document.getElementById('game-over-container').style.display = 'none';
+    startGame();
+}
+
+// Utility function to shuffle an array
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }

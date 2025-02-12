@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Game</title>
 </head>
 <body>
-    <div id="game-container">
+    <div id="game-container" style="display:none;">
         <h2 id="segment-title"></h2>
         <img id="segment-image" src="" alt="Segment Image">
         <p id="scene-introduction"></p>
@@ -22,6 +23,13 @@
         </div>
         <p id="score-display">Score: 0</p>
     </div>
+
+    <div id="game-over-container" style="display:none; text-align: center;">
+        <h2>Game Over</h2>
+        <p id="final-score"></p>
+        <button onclick="restartGame()">Restart Game</button>
+    </div>
+
     <script src="game.js"></script>
 </body>
 </html>
