@@ -9,7 +9,6 @@ fetch('segments.json')
     .then(response => response.json())
     .then(data => {
         segments = data;
-        // Shuffle questions for each segment
         segments.forEach(segment => {
             segment.questions = shuffleArray(segment.questions);
         });
@@ -17,6 +16,7 @@ fetch('segments.json')
     .catch(error => console.error('Error loading segments:', error));
 
 function startGame() {
+    document.getElementById('landing-page').style.display = 'none';
     showNewQuestionSegment();
 }
 
@@ -27,17 +27,15 @@ function showNewQuestionSegment() {
     document.getElementById('segment-image').src = segment.image;
     document.getElementById('scene-introduction').innerText = segment.introduction;
     document.getElementById('question-container').style.display = 'none';
-    document.getElementById('game-container').style.display = 'block';
 }
 
 function showQuestion() {
     const segment = segments[currentSegment];
-    const question = segment.questions[0]; // Get the first question after shuffling
+    const question = segment.questions[0];
     document.getElementById('question-text').innerText = question.text;
     const answersDiv = document.getElementById('answers');
     answersDiv.innerHTML = '';
 
-    // Shuffle answers
     const shuffledAnswers = shuffleArray(question.answers.map((answer, index) => ({
         text: answer,
         index: index
@@ -73,7 +71,6 @@ function selectAnswer(selected, correct) {
         score += Math.round((50 * (timeRemaining / 30)));
     }
     document.getElementById('score-display').innerText = `Score: ${score}`;
-    // Show correct answer and explanation
     document.getElementById('correct-answer').innerText = `Correct Answer: ${segments[currentSegment].questions[0].answers[correct]}`;
     document.getElementById('next-button').style.display = 'block';
 }
@@ -104,7 +101,6 @@ function restartGame() {
     startGame();
 }
 
-// Utility function to shuffle an array
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));

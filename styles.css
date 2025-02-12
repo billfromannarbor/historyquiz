@@ -9,8 +9,7 @@ body {
     background-color: #f0f0f0;
 }
 
-.landing-page {
-    text-align: left;
+.landing-page, #game-container, #game-over-container {
     max-width: 800px;
     width: 90%;
     margin: 0 auto;
@@ -18,6 +17,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     border-radius: 8px;
+}
+
+.landing-page {
+    text-align: left;
 }
 
 button {
@@ -36,12 +39,21 @@ button:hover {
     background-color: #0056b3;
 }
 
+.story-image {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
 #segment-image {
     width: 100%;
+    max-width: 600px;
     height: auto;
-    max-height: 300px;
+    margin: 20px 0;
     border-radius: 8px;
-    margin-bottom: 20px;
 }
 
 #answers button {
@@ -75,12 +87,4 @@ button:hover {
     #answers button {
         font-size: 16px;
     }
-}
-
-.story-image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 8px;
 }

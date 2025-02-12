@@ -8,10 +8,9 @@
     <title>OtherKitten Lost In Time</title>
 </head>
 <body>
-    <div class="landing-page">
+    <div id="landing-page" class="landing-page">
         <h1>OtherKitten Lost In Time</h1>
         <img src="images/otherkitten_history.png" alt="Time-Locked Cat" class="story-image">
-        <p>Your adventure through history begins here...</p>
         <p>You are a historian—or at least, you thought you were—until the day you found Otherkitten, a mysterious cat with an uncanny ability to vanish and reappear in different historical periods. One morning, Otherkitten swats at a strange glowing object on your desk, and suddenly, time distorts around you.</p>
         <p>A time rift opens, pulling you and Otherkitten into a strange temporal limbo. A cryptic message appears:</p>
         <blockquote>"Time is broken. The only way forward is through the past."</blockquote>
@@ -24,6 +23,29 @@
         <p>Your only hope? Use your knowledge of history, follow the cat, and solve the mysteries before time collapses forever.</p>
         <button onclick="startGame()">Start Game</button>
     </div>
+
+    <div id="game-container" style="display:none;">
+        <h2 id="segment-title"></h2>
+        <img id="segment-image" src="" alt="Segment Image">
+        <p id="scene-introduction"></p>
+        <button id="show-question" onclick="showQuestion()">Ask Question</button>
+        <div id="question-container" style="display:none;">
+            <p id="question-text"></p>
+            <div id="answers"></div>
+            <p id="timer">Time: 30s</p>
+            <button onclick="submitAnswer()">Submit Answer</button>
+            <p id="correct-answer"></p>
+            <button id="next-button" onclick="nextQuestion()" style="display:none;">Next Question</button>
+        </div>
+        <p id="score-display">Score: 0</p>
+    </div>
+
+    <div id="game-over-container" style="display:none; text-align: center;">
+        <h2>Game Over</h2>
+        <p id="final-score"></p>
+        <button onclick="restartGame()">Restart Game</button>
+    </div>
+
     <script src="game.js"></script>
 </body>
 </html>
