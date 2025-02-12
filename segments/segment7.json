@@ -1,0 +1,40 @@
+{
+    "title": "The Dream of Equality",
+    "image": "images/otherkitten_martinlutherking.png",
+    "introduction": "The time rift opens, and you find yourself amidst a massive crowd gathered at the Lincoln Memorial. The air is filled with hope and determination as Martin Luther King Jr. prepares to deliver his iconic speech. Otherkitten sits on the steps, her eyes reflecting the spirit of the moment. A piece of parchment flutters down beside you, inscribed with a message: 'The dream must be heard. Find the truth to keep it alive.'",
+    "questions": [
+        {
+            "text": "What is the name of Martin Luther King Jr.'s famous speech delivered during the March on Washington?",
+            "answers": [
+                "I Have a Dream",
+                "The Gettysburg Address",
+                "The Emancipation Proclamation",
+                "The Four Freedoms"
+            ],
+            "correct": 0,
+            "level": 1
+        },
+        {
+            "text": "In which year did Martin Luther King Jr. receive the Nobel Peace Prize?",
+            "answers": [
+                "1955",
+                "1964",
+                "1970",
+                "1980"
+            ],
+            "correct": 1,
+            "level": 2
+        },
+        {
+            "text": "Which legislation was passed in part due to Martin Luther King Jr.'s efforts in the civil rights movement?",
+            "answers": [
+                "The Civil Rights Act of 1964",
+                "The Voting Rights Act of 1965",
+                "The Fair Housing Act of 1968",
+                "All of the above"
+            ],
+            "correct": 3,
+            "level": 3
+        }
+    ]
+} 

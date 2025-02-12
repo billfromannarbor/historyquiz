@@ -1,0 +1,40 @@
+{
+    "title": "The Pharaoh's Lost Inscription",
+    "image": "images/otherkitten_sphynx.png",
+    "introduction": "As the time rift settles, the dim glow of flickering torches casts shifting shadows on the stone walls around you. The air is thick with the scent of aged parchment, incense, and dust. You've landed inside an unfinished tomb, deep within the Valley of the Kings. The chamber is partially excavated, with tools and half-carved inscriptions littering the floor. Hieroglyphics dance along the walls, depicting Pharaoh Tutankhamun's journey to the afterlife. Golden relics, still waiting to be placed, sit in neat rows against one side of the room. Then you spot Otherkitten—or more accurately, you spot the mess she's making. The small feline trots toward a half-carved stone tablet, her green eyes glinting with mischief. Before you can react, she playfully swats at some loose hieroglyphics, sending them scattering like leaves in the wind. With a delighted chirp, she chases the tumbling symbols across the smooth stone floor, her paws batting at them as if they were toy mice. You barely have time to groan before a group of priests enters the chamber, their robes rustling as they walk. They ignore you completely, their attention locked on the now-altered inscription on the tablet. Their faces pale. 'The Pharaoh's name is missing!' one of them exclaims, his voice filled with alarm. You glanced at Otherkitten, who sits proudly beside the tablet, tail curling smugly. Well, that's a problem. A familiar scrap of parchment fluttered down beside you: 'The boy king's name must endure, or his legacy will fade. Find what is lost before history is rewritten.'",
+    "questions": [
+        {
+            "text": "What was the title given to rulers of Ancient Egypt?",
+            "answers": [
+                "Emperor",
+                "Pharaoh",
+                "King",
+                "Vizier"
+            ],
+            "correct": 1,
+            "level": 1
+        },
+        {
+            "text": "Which symbol is commonly associated with royal power in Ancient Egypt?",
+            "answers": [
+                "Ankh (☥)",
+                "Lotus Flower",
+                "Pyramid",
+                "Eye of Horus"
+            ],
+            "correct": 0,
+            "level": 2
+        },
+        {
+            "text": "Tutankhamun's tomb contained a famous artifact inscribed with a protective spell. What was it?",
+            "answers": [
+                "The Book of the Dead",
+                "The Rosetta Stone",
+                "The Death Mask Inscription",
+                "The Pyramid Texts"
+            ],
+            "correct": 2,
+            "level": 3
+        }
+    ]
+} 

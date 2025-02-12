@@ -1,0 +1,40 @@
+{
+    "title": "The Voices of the Land",
+    "image": "images/otherkitten_trailoftears.png",
+    "introduction": "The time rift opens, and you find yourself on a dusty trail stretching across the horizon. The air is heavy with sorrow as you witness the forced relocation of Native American tribes from their ancestral lands. Otherkitten walks beside you, her eyes reflecting the resilience of the people. A piece of parchment flutters down beside you, inscribed with a message: 'The voices of the land must be heard. Find the truth to honor their legacy.'",
+    "questions": [
+        {
+            "text": "Which Native American tribe was primarily affected by the Trail of Tears?",
+            "answers": [
+                "Cherokee",
+                "Sioux",
+                "Apache",
+                "Navajo"
+            ],
+            "correct": 0,
+            "level": 1
+        },
+        {
+            "text": "Which U.S. President signed the Indian Removal Act, leading to the Trail of Tears?",
+            "answers": [
+                "George Washington",
+                "Thomas Jefferson",
+                "Andrew Jackson",
+                "Abraham Lincoln"
+            ],
+            "correct": 2,
+            "level": 2
+        },
+        {
+            "text": "Which landmark Supreme Court case ruled in favor of the Cherokee Nation's sovereignty?",
+            "answers": [
+                "Marbury v. Madison",
+                "Worcester v. Georgia",
+                "Brown v. Board of Education",
+                "Dred Scott v. Sandford"
+            ],
+            "correct": 1,
+            "level": 3
+        }
+    ]
+} 

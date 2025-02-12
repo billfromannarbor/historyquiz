@@ -1,0 +1,40 @@
+{
+    "title": "The Vanishing Victory",
+    "image": "images/otherkitten_rome.png",
+    "introduction": "You barely have time to catch your breath before the time rift deposits you in the heart of ancient Rome. The midday sun glares down on the Roman Senate, where men in togas whisper in tense huddles. A faint scent of olive oil and dust lingers in the air. Otherkitten lands beside you gracefully, its tail flicking as if sensing trouble. A loud murmur spreads through the crowd—Julius Caesar is about to enter the Senate. But something is wrong. A critical warning that should have been delivered to Caesar has disappeared from history. Another parchment fluttered at your feet. You pick it up: 'The Ides of March bring doom, but what was lost seals the tomb.'",
+    "questions": [
+        {
+            "text": "Which of the following was the famous warning given to Julius Caesar?",
+            "answers": [
+                "Et tu, Brute?",
+                "Beware the Ides of March.",
+                "The eagle will fall before the dawn.",
+                "Render unto Caesar what is Caesar's."
+            ],
+            "correct": 1,
+            "level": 1
+        },
+        {
+            "text": "What was the title given to the leader of the Roman Republic?",
+            "answers": [
+                "Emperor",
+                "Consul",
+                "Senator",
+                "Tribune"
+            ],
+            "correct": 1,
+            "level": 2
+        },
+        {
+            "text": "Put the following events in chronological order:",
+            "answers": [
+                "Crossing of the Rubicon",
+                "Assassination of Julius Caesar",
+                "Death of Cleopatra",
+                "Battle of Actium"
+            ],
+            "correct": [0, 1, 3, 2],
+            "level": 3
+        }
+    ]
+} 

@@ -1,0 +1,40 @@
+{
+    "title": "The Disappearing Declaration",
+    "image": "images/otherkitten_independencehall.png",
+    "introduction": "You blink, and the swirling void of the time rift vanishes. The air is thick with humidity, the scent of ink and parchment filling your nose. A commotion surrounds you. Men in powdered wigs and long coats are gathered in a candlelit hall, their voices rising in heated debate. You realize where you are. Independence Hall. Otherkitten, perched smugly on a wooden desk, swats at a quill pen. You glance around—no one seems to notice you or the cat. That's when you see it: The Declaration of Independence is missing. A scrap of parchment fluttered at your feet. Scribbled hastily in ink: 'The fate of a nation is at stake. Find the missing words before it's too late.'",
+    "questions": [
+        {
+            "text": "What is the name of the building where the Declaration of Independence was signed?",
+            "answers": [
+                "Independence Hall",
+                "The White House",
+                "The Capitol Building",
+                "The Liberty Bell Center"
+            ],
+            "correct": 0,
+            "level": 1
+        },
+        {
+            "text": "Who was the primary author of the Declaration of Independence?",
+            "answers": [
+                "George Washington",
+                "Thomas Jefferson",
+                "Benjamin Franklin",
+                "James Madison"
+            ],
+            "correct": 1,
+            "level": 2
+        },
+        {
+            "text": "Which of the following phrases belongs in the Declaration of Independence?",
+            "answers": [
+                "Life, Liberty, and the Pursuit of Happiness",
+                "Give me liberty, or give me death!",
+                "Government of the people, by the people, for the people",
+                "One if by land, two if by sea"
+            ],
+            "correct": 0,
+            "level": 3
+        }
+    ]
+} 

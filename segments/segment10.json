@@ -1,0 +1,40 @@
+{
+    "title": "The Lines of Inequality",
+    "image": "images/otherkitten_redlining.png",
+    "introduction": "The time rift opens, and you find yourself in a city planning office, surrounded by maps marked with red lines. The air is tense with the weight of decisions that will shape communities for generations. Otherkitten sits on a desk, her eyes reflecting the impact of these boundaries. A piece of parchment flutters down beside you, inscribed with a message: 'The lines of inequality must be erased. Find the truth to pave the way for justice.'",
+    "questions": [
+        {
+            "text": "What was the primary purpose of redlining maps?",
+            "answers": [
+                "To identify tourist attractions",
+                "To designate areas for investment",
+                "To outline public transportation routes",
+                "To mark historical landmarks"
+            ],
+            "correct": 1,
+            "level": 1
+        },
+        {
+            "text": "Which government agency was responsible for creating redlining maps in the United States?",
+            "answers": [
+                "Federal Housing Administration (FHA)",
+                "Department of Transportation (DOT)",
+                "Environmental Protection Agency (EPA)",
+                "National Park Service (NPS)"
+            ],
+            "correct": 0,
+            "level": 2
+        },
+        {
+            "text": "What was one major consequence of redlining on affected communities?",
+            "answers": [
+                "Increased property values",
+                "Improved public services",
+                "Economic disinvestment",
+                "Enhanced educational opportunities"
+            ],
+            "correct": 2,
+            "level": 3
+        }
+    ]
+} 

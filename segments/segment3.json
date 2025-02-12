@@ -1,0 +1,40 @@
+{
+    "title": "The Mystery of the Missing Map",
+    "image": "images/otherkitten_santamaria.png",
+    "introduction": "The time rift spits you out onto the wooden deck of a ship, the salty sea air whipping at your face. Around you, sailors are bustling about, their eyes filled with anticipation—and some with doubt. A sailor grips a tattered piece of parchment, his hands shaking. 'The navigation map… it's missing!' Otherkitten perches on a wooden barrel, watching the waves. A scrap of paper fluttered near its paws, inscribed with a cryptic message: 'Without the path, the voyage is lost. Find the missing truth before time is tossed.' You realize that Columbus's ability to navigate is in jeopardy. If you don't restore the correct information, history could be thrown off course.",
+    "questions": [
+        {
+            "text": "What is the name of the ocean Columbus crossed?",
+            "answers": [
+                "Pacific Ocean",
+                "Atlantic Ocean",
+                "Indian Ocean",
+                "Arctic Ocean"
+            ],
+            "correct": 1,
+            "level": 1
+        },
+        {
+            "text": "Columbus sailed west in 1492 believing he would reach which country?",
+            "answers": [
+                "India",
+                "China",
+                "Portugal",
+                "Brazil"
+            ],
+            "correct": 0,
+            "level": 2
+        },
+        {
+            "text": "Columbus was granted ships by Spain, but who were the two monarchs that funded him?",
+            "answers": [
+                "Isabella & Ferdinand",
+                "Henry VIII & Anne Boleyn",
+                "Philip II & Catherine of Aragon",
+                "Louis XIV & Marie Antoinette"
+            ],
+            "correct": 0,
+            "level": 3
+        }
+    ]
+} 

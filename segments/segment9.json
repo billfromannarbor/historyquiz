@@ -1,0 +1,40 @@
+{
+    "title": "The Fight for the Vote",
+    "image": "images/otherkitten_suffrage.png",
+    "introduction": "The time rift opens, and you find yourself in a bustling city street filled with women marching for their right to vote. The air is charged with determination and hope as banners wave and voices rise in unison. Otherkitten sits atop a nearby lamppost, her eyes reflecting the courage of the suffragettes. A piece of parchment flutters down beside you, inscribed with a message: 'The voices of change must be heard. Find the truth to honor their struggle.'",
+    "questions": [
+        {
+            "text": "What amendment to the U.S. Constitution granted women the right to vote?",
+            "answers": [
+                "15th Amendment",
+                "19th Amendment",
+                "21st Amendment",
+                "26th Amendment"
+            ],
+            "correct": 1,
+            "level": 1
+        },
+        {
+            "text": "Who was a prominent leader in the American women's suffrage movement?",
+            "answers": [
+                "Susan B. Anthony",
+                "Eleanor Roosevelt",
+                "Rosa Parks",
+                "Harriet Tubman"
+            ],
+            "correct": 0,
+            "level": 2
+        },
+        {
+            "text": "In which year was the 19th Amendment ratified, granting women the right to vote in the United States?",
+            "answers": [
+                "1919",
+                "1920",
+                "1921",
+                "1922"
+            ],
+            "correct": 1,
+            "level": 3
+        }
+    ]
+} 

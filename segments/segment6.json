@@ -1,0 +1,40 @@
+{
+    "title": "The Trial of the Stars",
+    "image": "images/otherkitten_galileo.png",
+    "introduction": "The time rift opens, and you find yourself in a dimly lit chamber filled with the scent of old books and candle wax. The room is tense with anticipation as Galileo Galilei stands before the Inquisition, defending his revolutionary ideas about the cosmos. Otherkitten sits quietly on a windowsill, her eyes fixed on the night sky. A piece of parchment flutters down beside you, inscribed with a message: 'The truth of the stars must shine. Find the answers to light the way.'",
+    "questions": [
+        {
+            "text": "What did Galileo use to observe the heavens?",
+            "answers": [
+                "Microscope",
+                "Telescope",
+                "Binoculars",
+                "Sextant"
+            ],
+            "correct": 1,
+            "level": 1
+        },
+        {
+            "text": "Which celestial body did Galileo discover had moons orbiting it?",
+            "answers": [
+                "Mars",
+                "Venus",
+                "Jupiter",
+                "Saturn"
+            ],
+            "correct": 2,
+            "level": 2
+        },
+        {
+            "text": "Which book by Galileo supported the heliocentric model of the solar system?",
+            "answers": [
+                "The Starry Messenger",
+                "Dialogue Concerning the Two Chief World Systems",
+                "Principia Mathematica",
+                "On the Revolutions of the Celestial Spheres"
+            ],
+            "correct": 1,
+            "level": 3
+        }
+    ]
+} 

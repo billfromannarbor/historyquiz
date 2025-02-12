@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Game</title>
+</head>
+<body>
+    <div id="game-container">
+        <h2 id="segment-title"></h2>
+        <img id="segment-image" src="" alt="Segment Image">
+        <p id="scene-introduction"></p>
+        <button id="show-question" onclick="showQuestion()">Ask Question</button>
+        <div id="question-container" style="display:none;">
+            <p id="question-text"></p>
+            <div id="answers"></div>
+            <p id="timer">Time: 30s</p>
+            <button onclick="submitAnswer()">Submit Answer</button>
+            <p id="correct-answer"></p>
+            <button id="next-button" onclick="nextQuestion()" style="display:none;">Next Question</button>
+        </div>
+        <p id="score-display">Score: 0</p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

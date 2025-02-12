@@ -1,0 +1,40 @@
+{
+    "title": "The Chains of History",
+    "image": "images/otherkitten_slave_ship.png",
+    "introduction": "The time rift deposits you onto the deck of a large ship, the creaking of wood and the sound of waves crashing against the hull filling your ears. The air is heavy with the scent of salt and despair. You find yourself aboard a slave ship, a grim reminder of one of history's darkest chapters. Otherkitten sits solemnly on a coil of rope, her eyes reflecting the sorrow of the souls below deck. A tattered piece of parchment fluttered in the wind, landing at your feet. It reads: 'The chains of history must be broken. Find the truth to set them free.'",
+    "questions": [
+        {
+            "text": "What was the primary destination for enslaved Africans during the Transatlantic Slave Trade?",
+            "answers": [
+                "The Caribbean",
+                "Europe",
+                "Asia",
+                "Australia"
+            ],
+            "correct": 0,
+            "level": 1
+        },
+        {
+            "text": "Which year did the United States officially abolish the transatlantic slave trade?",
+            "answers": [
+                "1776",
+                "1808",
+                "1865",
+                "1900"
+            ],
+            "correct": 1,
+            "level": 2
+        },
+        {
+            "text": "Which of the following was a key figure in the abolitionist movement in the United States?",
+            "answers": [
+                "Harriet Tubman",
+                "George Washington",
+                "Thomas Jefferson",
+                "Andrew Jackson"
+            ],
+            "correct": 0,
+            "level": 3
+        }
+    ]
+} 
