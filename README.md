@@ -48,10 +48,6 @@ To run the game locally, you'll need to set up a simple HTTP server. Follow thes
 2. **Open the Game**:
    Open your web browser and go to `http://localhost:8080` to start playing OtherKitten Lost In Time.
 
-## Contributing
-
-If you'd like to contribute to the project, feel free to fork the repository and submit a pull request with your changes.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
