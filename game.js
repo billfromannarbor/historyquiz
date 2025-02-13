@@ -3,15 +3,13 @@ let currentSegment = 0;
 let segments = [];
 let timer;
 let timeRemaining = 30;
+let userLevel = 2;
 
 // Fetch segments from segments.json
 fetch('segments.json')
     .then(response => response.json())
     .then(data => {
-        segments = data;
-        segments.forEach(segment => {
-            segment.questions = shuffleArray(segment.questions);
-        });
+        segments = shuffleArray(data);
     })
     .catch(error => console.error('Error loading segments:', error));
 
@@ -31,7 +29,7 @@ function showNewQuestionSegment() {
 
 function showQuestion() {
     const segment = segments[currentSegment];
-    const question = segment.questions[0];
+    const question = segment.questions[userLevel]; //Todo get a question based on their level
     document.getElementById('question-text').innerText = question.text;
     const answersDiv = document.getElementById('answers');
     answersDiv.innerHTML = '';
@@ -52,6 +50,18 @@ function showQuestion() {
     startTimer();
 }
 
+function selectAnswer(selected) {
+    // Highlight the selected button
+    const buttons = document.querySelectorAll('#answers button');
+    buttons.forEach((button, index) => {
+        if (index === selected) {
+            button.classList.add('selected');
+        } else {
+            button.classList.remove('selected');
+        }
+    });
+}
+
 function startTimer() {
     timeRemaining = 30;
     document.getElementById('timer').innerText = `Time: ${timeRemaining}s`;
@@ -65,17 +75,16 @@ function startTimer() {
     }, 1000);
 }
 
-function selectAnswer(selected, correct) {
+function submitAnswer() {
     clearInterval(timer);
+
     if (selected === correct) {
         score += Math.round((50 * (timeRemaining / 30)));
     }
     document.getElementById('score-display').innerText = `Score: ${score}`;
+    document.getElementById('score-display').style.display = 'block';
     document.getElementById('correct-answer').innerText = `Correct Answer: ${segments[currentSegment].questions[0].answers[correct]}`;
-    document.getElementById('next-button').style.display = 'block';
-}
-
-function submitAnswer() {
+    document.getElementById('correct-answer').style.display = 'block';
     document.getElementById('next-button').style.display = 'block';
 }
 

@@ -70,6 +70,11 @@ button:hover {
     background-color: #ccc;
 }
 
+#answers button.selected {
+    background-color: #4CAF50; /* Green color for selected button */
+    color: white;
+}
+
 #score-display {
     font-size: 18px;
     margin-top: 20px;
