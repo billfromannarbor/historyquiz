@@ -45,7 +45,7 @@ function showQuestion() {
     shuffledAnswers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
-        button.onclick = () => selectAnswer(answer.index, question.correct);
+        button.onclick = () => selectAnswer(answer.index);
         answersDiv.appendChild(button);
     });
 

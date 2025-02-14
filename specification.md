@@ -1,29 +1,29 @@
 # OtherKitten Lost In Time
 
-Overview:
+## Overview:
 This is a history quiz game. The questions are intended to be harder based on how you answer the previous questions. Each question has three levels. Level 1 is the easiest, and Level 3 is the hardest.  
 
-Game Flow:
-The game should have a landing page that displays the story premise, the story image, and a button to start the game. When the user clicks start the game, the first question is diplayed based on the randomized order.
+## Game Start:
+The game should start from a landing page that displays the story premise, the story image, and a button to start the game. 
+
+## Game Flow:
+The game is broken into segments.  Each segment represents a different significant moment in history.  A segment includes a set of questions/answers about this moment.  These questions are ranked at three levels.  Level 1 is the easiest, and Level 3 is the hardest.
 
 Each segment should present the introduction for that segment and a button that says:  "Ask Question".
 
-When the user presses the button, the question for that segment should be shown.
-- **Level 1**: Show this if the player answered the two previous questions incorrectly.
-- **Level 2**: Show this if the player answered one of the last two questions correctly.
-- **Level 3**: Show this if the player answered both the last two questions correctly.
+When the user presses the button, the question and answer choices for that segment should be shown, a submit answer button will be displayed and a 30 second countdown timer started.
 
-A 30 second countdown timer will be start. 
+Level of the question is based on the answers to the two previous questions.  1 - Show this if the player answered the two previous questions incorrectly, 2 - Show this if the player answered one of the last two questions correctly, 3 - Show this if the player answered both the last two questions correctly.
 
-A submit answer button will also be displayed. 
+The user must answer the question and press the submit answer button for the timer to stop and the question to be scored.
 
-The player will need to answer the question and then hit the submit button for the timer to stop and the question is scored.
+After the submit answer button is pressed, the timer should stop and the question should be scored.  The score should be displayed along with how the score was calculated.  At the same time, a next question button should be displayed.
 
-When the question is scored, the correct answer should be shown along with the score and how it was calculated.  The player can then press the next button to go to the next question.
+When the user presses the next question button, go to the next question.  If there are no more questions, display a "Game Over" screen that displays the final score and a button to play again.
 
-Scoring:
+
+## Scoring:
 The number of points the user can score for a correct answer is based on the level of the question multiplied by the number of seconds remaining divided by 30, but rounded to the nearest 1 point. For example, if the user answers a level 1 question with 20 seconds remaining, they score 50 * (20 / 30) = 33 points.
-
 
 The first question will always be Level 3 with 200 points. The second question will be either Level 2 or Level 3 with 100 or 200 points based on how the user answered the first question. (If they answered it correctly, the second question is Level 2; if they answered it incorrectly, the second question is Level 3.)
 
@@ -35,21 +35,21 @@ The user only sees one question for the segment, so if they are asked a level 1 
 
 The user's score should be displayed prominently at the top of the screen.
 
-Implementation:
-The game is a simple HTML/CSS/JavaScript game that runs in the browser.
+## Implementation:
+The game is meant to be played on a phone. The game should be a simple HTML/CSS/JavaScript game that runs in the browser.
 
-Game Style:
+## Game Style:
 The colors should be base on the colors of the historical segment that the questions are about.  Each segment has an accompanying image that can be used to determine the colors.  Because of this, Each scene has a different color scheme.
 
 The game should have a nice responsive design that works on desktop, tablet, and mobile devices.  The game should be playable on a phone.
 
-Deployment:
+## Deployment:
 We are going to host this site on github pages so only static content is allowed.
 
-Testing:
+## Testing:
 We are going to test the game using manual testing, but may want to build an automated test suite in the future.
 
-Randomization:
+## Randomization:
 The questions should be presented in a random order. The answers should be presented in a random order.  For the questions that ask the player to put events in order, the answers should be presented in a random order.
 
 ## StoryPremise: The Time-Locked Cat
