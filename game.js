@@ -15,12 +15,15 @@ fetch('segments.json')
 
 function startGame() {
     document.getElementById('landing-page').style.display = 'none';
+    document.getElementById('game-container').style.display = 'block';
+    segments = shuffleArray(segments);
+    currentSegment = 0;
     showNewQuestionSegment();
 }
 
 function showNewQuestionSegment() {
-    const segment = segments[currentSegment];
-    document.getElementById('game-container').style.display = 'block';
+    var segment = segments[currentSegment];
+    
     document.getElementById('segment-title').innerText = segment.title;
     document.getElementById('segment-image').src = segment.image;
     document.getElementById('scene-introduction').innerText = segment.introduction;
