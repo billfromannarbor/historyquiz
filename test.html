@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Test Page for Game Logic</h1>
+    <button onclick="testRandomization()">Test Randomization</button>
+    <div id="test-output"></div>
+
+    <script src="game.js"></script>
+    <script>
+        function testRandomization() {
+            // Assuming segments are already loaded
+            const testOutput = document.getElementById('test-output');
+            testOutput.innerHTML = '';
+
+            segments.forEach((segment, index) => {
+                const question = segment.questions[userLevel];
+                const questionText = document.createElement('p');
+                questionText.innerText = `Segment ${index + 1}: ${question.text}`;
+                testOutput.appendChild(questionText);
+            });
+        }
+    </script>
+</body>
+</html> 
